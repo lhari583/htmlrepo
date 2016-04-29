@@ -1,0 +1,36 @@
+
+            <script>
+            $(document).ready(function(){
+                $("h4#1").click(function(){
+                    $("span#rotate1").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                });
+            });
+            </script>
+
+
+
+
+
+
+
+          <script>
+            $(document).ready(function(){
+                $("h4#1").click(function(){
+                    $("span#rotate1").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                    $("span#rotate1").toggle("fast",function(){
+                      $("span#rotate1").css({
+                         'transform': 'rotate(360deg)',
+                           '-webkit-transform': 'rotate(360deg)',
+                           '-ms-transform': 'rotate(360deg)' 
+                      });
+                      $("span#rotate2,span#rotate3").show();
+                    });
+                });
+            });
+            </script>

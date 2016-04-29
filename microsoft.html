@@ -1,0 +1,155 @@
+<html>
+<head>
+	<title>CodeBees</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="css/demo.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="css/component.css" media="screen, projection" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+
+ <script> 
+$(document).ready(function(){
+    $("#vertical>ul#1").hide();
+    $("h4#1").click(function(){
+        $("#vertical>ul#1").slideToggle("slow" ,function(){
+             $("#vertical>ul#2").slideUp("slow");
+        });
+    });
+});
+</script>
+
+ <script> 
+$(document).ready(function(){
+    $("#vertical>ul#2").hide();
+    $("h4#2").click(function(){
+        $("#vertical>ul#2").slideToggle("slow" ,function(){
+             $("#vertical>ul#1").slideUp("slow");
+        });
+    });
+});
+</script>
+
+<script>
+            $(document).ready(function(){
+                $("h4#1").click(function(){
+                    $("span#rotate1").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                    $("span#rotate1").toggle("fast",function(){
+                      $("span#rotate1").css({
+                         'transform': 'rotate(360deg)',
+                           '-webkit-transform': 'rotate(360deg)',
+                           '-ms-transform': 'rotate(360deg)' 
+                      });
+                      $("span#rotate2").show();
+                    });
+                });
+            });
+            </script>
+
+
+             <script>
+            $(document).ready(function(){
+                $("h4#2").click(function(){
+                    $("span#rotate2").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                    $("span#rotate2").toggle("fast",function(){
+                      $("span#rotate2").css({
+                         'transform': 'rotate(360deg)',
+                           '-webkit-transform': 'rotate(360deg)',
+                           '-ms-transform': 'rotate(360deg)' 
+                      });
+                      $("span#rotate1").show();
+                    });
+                });
+            });
+            </script>
+
+
+</head>
+<body>
+	
+
+
+         <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span><img src="images/codebees.png" style="width: 100px; margin-top: -10px;"></span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="team.html"><span class="glyphicon glyphicon-exclamation-sign">&nbspAbout</span></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog">&nbspServices</span>
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="develop.html"><i class="fa fa-mobile"></i>&nbspdevelopment</a></li>
+                              <li class="divider"></li>
+                              <li><a href="mdevelop.html"><i class="fa fa-android"></i>&nbspandroid development</a></li>
+                              <li class="divider"></li>
+                              <li><a href="ios.html"><i class="fa fa-apple"></i>&nbspios development</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html"><span class="glyphicon glyphicon-user">&nbspContactUs</span></a>
+                    </li>
+                </ul>
+                     
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+     <div id="vertical">
+        <h3>SERVICES</h3>
+          <br>
+        <h4 id="1"><a href="develop.html">Development</a><span id="rotate1">&raquo;</span></h4>
+         <ul id="1">
+            <li><a href="#"><i class="fa fa-windows"></i>&nbspMicrosoft Technologies</a></li>
+            <li><a href="#"><i class="fa fa-desktop"></i>&nbspSystem Integration</a></li>
+            <li><a href="#"><i class="fa fa-life-ring"></i>&nbspMaintainence&Support</a></li>
+            <li><a href="#"><i class="fa fa-css3"></i>&nbspCreative& UX</a></li>
+         </ul>
+         <h4 id="2"><a href="mdevelop.html">Mobile Development</a><span id="rotate2">&raquo;</span></h4>
+          <ul id="2">
+              <li><a href="ios.html"><i class="fa fa-apple"></i>&nbspIos</a></li>
+              <li><a href="#"><i class="fa fa-android"></i>&nbspAndroid</a></li>
+          </ul>
+     </div>
+ <div id="content">
+        <h2>Microsoft</h2>
+
+        <p>Microsoft Technology Centers (MTCs) provide everything you need technology experts, industry leaders, and an outstanding environment to envision, plan, build, deploy, operate, and optimize a secure, customized solution, based on Microsoft and partner technologies. An MTC’s dynamic collection of resources shortens your development time by removing traditional barriers, and reduces the total cost of solution acquisition. Drawing on the integrated innovation of Microsoft products and technologies, the MTC can be a powerful resource for your organization.
+          </p>
+        <br>
+        <p>We have 10+ years of lucrative experience in development of various domains like Telecom Management, Logistics, HealthCare, Inventory management, Bio-metric devices, Finance, Human Resource, etc.</p>
+
+    </div>
+
+
+ <div class="footer">
+         <p>&copy Copyrights 2015 Codebees.All rights reserved</p>
+     </div>
+
+</body>
+</html>

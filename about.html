@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>CodeBees</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/demo.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="css/component.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+     <script> 
+    $(document).ready(function(){
+    $("h4>a").click(function(){
+        $("#vertical>ul").slideToggle("slow");
+    });
+});
+</script>
+
+     <script> 
+    $(document).ready(function(){
+    $("h4").click(function(){
+        $("#rotate").slideToggle("slow");
+    });
+});
+</script>
+
+         <script>
+          $(document).ready(function(){
+              $("h4#1").click(function(){
+                  $("#rotate1").fadeOut("slow");
+              });
+          });
+          </script>
+
+          <script>
+          $(document).ready(function(){
+              $("h4").click(function(){
+                  $("#rotate1").fadeIn("slow");
+              });
+          });
+          </script>
+
+
+
+</head>
+<body>
+	<div id="header">
+		<img src="images/codebees.png">
+
+	</div>
+
+	<div id="nav">
+        <ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a class="active" href="#">About</a></li>
+        	<li><a href="#">Programs</a>
+                <ul>
+                	<li><a href="#">Events</a></li>
+                	<li><a href="#">Gallery</a></li>
+                	<li><a href="#">Projects</a>
+                        <ul>
+                            <li>
+                                <a href="#">Project 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Project 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Project 3</a>
+                            </li>
+                        </ul>
+                	</li>
+                </ul>
+        	</li>
+        	<li><a href="develop.html">Services</a></li>
+        	<li><a href="#">ContactUs</a></li>  
+        </ul>
+
+	</div>
+
+    <div id="vertical">
+        <h3>ABOUT US</h3>
+          <br>
+        <h4><a href="team.html">Team</a><span id="rotate1">&raquo;</span></h4>
+         <ul>
+            <li><a href="#">Sam Norling</a></li>
+            <span><hr></span>
+            <li><a href="#">Sridhar Mannam</a></li>
+            <span><hr></span>
+            <li><a href="#">Nagasai Mudara</a></li>
+            <span><hr></span>
+            <li><a href="#">Surya Srikanth paleru</a></li>
+            <span><hr></span>
+            <li><a href="#">Anil Kumar brahmanapally</a></li>
+            <span><hr></span>
+         </ul>
+    </div>
+
+    <div id="content">
+        <h2>Leadership</h2>
+
+        <p>At Codebees, we believe that great technology is created by smart people. All of our managers, architects, designers and developers are A-class players, the kind of team that inspires confidence and always delivers. We pride ourselves in team management, and close collaboration among all domain talents throughout our company.</p>
+        <br>
+        <p>Our team in San Francisco is responsible for client communication, project management, architecture and delivery. The team is led by Sam Norling . The team in India is responsible for development and testing, led by Sridhar mannam and Nagasai Mudara.</p>
+    </div>
+
+<div class="footer">
+         <p>&copy Copyrights 2015 Codebees.All rights reserved</p>
+     </div>
+
+</body>
+</html>    

@@ -1,0 +1,267 @@
+<html>
+<head>
+	  <title>CodeBees</title>
+  	  <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link href="css/demo.css" media="screen, projection" rel="stylesheet" type="text/css">
+      <link href="css/component.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+      <script src="dist/sweetalert.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+      <link rel="icon" href="images/favicon.png">
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+
+<script>
+      function validateForm() {
+          var x = document.forms["myForm"]["textarea"].value;
+          if (x == null || x == "") {
+              swal("Please Enter Some Email Content...");
+              return false;
+          }
+      }
+</script>
+
+
+<script>
+      function initialize() {
+        var mapProp = {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap1"), mapProp);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script>
+    function initialize() {
+      var mapProp = {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap2"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script>
+    function initialize() {
+      var mapProp = {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap3"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#vertical1>ul#1").hide();
+        $("h4#1").click(function(){
+            $("#vertical1>ul#1").slideToggle("slow" ,function(){
+                $("#vertical1>ul#2,#vertical1>ul#3").slideUp("fast");
+                 
+            });
+        });
+    });
+</script>
+
+<script>
+      $(document).ready(function(){
+          $("#vertical1>ul#2").hide();
+          $("h4#2").click(function(){
+              $("#vertical1>ul#2").slideToggle("slow" ,function(){
+                  $("#vertical1>ul#1,#vertical1>ul#3").slideUp("fast");
+                   
+              });
+          });
+      });
+</script>
+
+<script>
+      $(document).ready(function(){
+          $("#vertical1>ul#3").hide();
+          $("h4#3").click(function(){
+              $("#vertical1>ul#3").slideToggle("slow" ,function(){
+                  $("#vertical1>ul#1,#vertical1>ul#2").slideUp("fast");
+                   
+              });
+          });
+      });
+</script>
+             
+
+<script>
+      $(document).ready(function(){
+          $("h4#1").click(function(){
+              $("span#rotate1").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                $("span#rotate1").toggle("fast",function(){
+                  $("span#rotate1").css({
+                         'transform': 'rotate(360deg)',
+                           '-webkit-transform': 'rotate(360deg)',
+                           '-ms-transform': 'rotate(360deg)' 
+                      });
+                      $("span#rotate2,span#rotate3").show();
+                  });
+            });
+       });
+</script>
+
+            
+           <script>
+            $(document).ready(function(){
+                $("h4#2").click(function(){
+                    $("span#rotate2").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                    $("span#rotate2").toggle("fast",function(){
+                      $("span#rotate2").css({
+                         'transform': 'rotate(360deg)',
+                           '-webkit-transform': 'rotate(360deg)',
+                           '-ms-transform': 'rotate(360deg)' 
+                      });
+                       $("span#rotate1,span#rotate3").show();
+                    });
+                });
+            });
+            </script>
+
+
+
+           <script>
+            $(document).ready(function(){
+                $("h4#3").click(function(){
+                    $("span#rotate3").css({
+                           'transform': 'rotate(90deg)',
+                           '-webkit-transform': 'rotate(90deg)',
+                           '-ms-transform': 'rotate(90deg)' });
+                    $("span#rotate3").toggle("fast",function(){
+                      $("span#rotate3").css({
+                         'transform': 'rotate(360deg)',
+                           '-webkit-transform': 'rotate(360deg)',
+                           '-ms-transform': 'rotate(360deg)' 
+                      });
+                       $("span#rotate1,span#rotate2").show();
+                    });
+                });
+            });
+            </script>
+
+        
+</head>
+<body>
+	
+	  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span><img src="images/codebees.png" style="width: 100px; margin-top: -10px;"></span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="team.html"><span class="glyphicon glyphicon-exclamation-sign">&nbspAbout</span></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog">&nbspServices</span>
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="develop.html"><i class="fa fa-mobile"></i>&nbspdevelopment</a></li>
+                              <li class="divider"></li>
+                              <li><a href="mdevelop.html"><i class="fa fa-android"></i>&nbspandroid development</a></li>
+                              <li class="divider"></li>
+                              <li><a href="ios.html"><i class="fa fa-apple"></i>&nbspios development</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html"><span class="glyphicon glyphicon-user">&nbspContactUs</span></a>
+                    </li>
+                </ul>
+                     
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div id="vertical1">
+        <h3>Contact Information</h3>
+        <br>
+        <h4 id="1">US<span id="rotate1">&raquo;</span></h4>
+           <ul id="1">
+              <li>1721 Blakesley<br>Drivesan Ramon<br>CA - 94582
+              </li>
+              <li><div id="googleMap1" style="width:200px;height:200px;"></div></li>
+           </ul>
+         <h4 id="2">India<span id="rotate2">&raquo;</span></h4>
+            <ul id="2">
+                <li>4th Floor, Chitti Classic Building<br>
+                Balkampet Road, S.R.Nagar<br>
+                  Hyderabad - 500038<br>
+                  Email: info@codebees.com</li>
+                <li><div id="googleMap2" style="width:200px;height:200px;"></div></li>
+            </ul>
+          <h4 id="3">Singapore<span id="rotate3">&raquo;</span></h4>
+            <ul id="3">
+                <li>#03-24, Blk 8,<br>
+               Boonlay Drive<br>
+               Summerdale<br>
+              Singapore-649928<br>
+               Phone: 90060646<br>
+               Email: info@codebees.com</li>
+               <li><div id="googleMap3" style="width:200px;height:200px;"></div></li>
+            </ul>
+    </div>
+         
+
+         
+         <div id="content" action="form.asp" method="post">
+            <div id="mail">
+              <form id="myForm" onsubmit="return validateForm()" method="post">
+                  <p><input type="text" name="username" placeholder="UserName" required></p>
+                  <p><input type="text" name="Email" placeholder="Email" required></p>
+                  <p><textarea class="form-control" rows="3" type="textarea" name="textarea" onclick="validateForm" requried></textarea></p>
+            
+            <p align="right" style="margin-right: 90px;"><b><input type="submit" class="btn btn-primary" onclick="validateForm()" value="SendMail"><span><strong>&nbsp</strong></span>
+            <input type="submit" class="btn btn-primary" onclick="myFunction()" value="reset"></b></p>
+            </form>
+
+            <script>
+            function myFunction() {
+                document.getElementById("myForm").reset();
+            }
+            </script>
+         </div>
+        </div> 
+
+
+<div class="footer">
+       <p>&copy Copyrights 2015 Codebees.All rights reserved</p>
+</div>
+
+
+</body>
+</html>    
