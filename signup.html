@@ -58,13 +58,22 @@
         <div class="signin">
 
         <form id="myForm">
-          <h3>Signin</h3>
+          <h3>Login</h3>
 
           <p><input type="text" name="username" placeholder="Username"></p>
           <p><input type="password" name="password" placeholder="Password"></p>
-          <p><input type="button" class="styled-button-2" value="signup">&nbsp &nbsp
-             <input type="button" class="styled-button-2" onclick="myFunction()" value="reset">
+          <p style="text-align:left; margin-left:20px;"><label><input type="checkbox" value="">&nbsp<small>Remember me</small></label></p>
+          <p><input type="submit" class="btn btn-primary btn-sm" value="signup">&nbsp &nbsp
+             <input type="submit" class="btn btn-primary btn-sm" onclick="myFunction()" value="reset"><br>
+             <p>Not Registered<a href="reg.html" style="color:#4A8BFD;">&nbspCreate an account</a></p>
+           
+             
           </p>
+          <hr style="margin: 5px;">
+            <br>
+          <button type="button" class="btn btn-primary" style="margin-left:18px; width:310px; text-align:left;"><i class="fa fa-facebook"></i>&nbsp | &nbspLoginin with facebook</button>
+          <br>
+          <button type="button" class="btn btn-info" style="margin-left:18px; margin-top:15px; width:310px; text-align:left;"><i class="fa fa-twitter"></i>&nbsp | &nbspLoginin with twitter</button>
         </form>
         <script>
 function myFunction() {

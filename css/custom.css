@@ -140,7 +140,7 @@ body{
 	float: right;
 	position: absolute;
 	border-radius: 8px;
-	margin-left: 555px;
+	margin-left: 540px;
 	margin-bottom: 0px;
 }
 #blog2 h3{
@@ -410,10 +410,12 @@ input[type=password]:focus, textarea:focus {
     float: right;
     margin: 40px;
     margin-top: 130px;
+    float: left;
+    margin-left: 530px;
 }
 .signup h3{
     text-align: center;
-    color: #06a8b8;
+    color: #4A8BFD;
     background-color: #d0d2d2;
     margin: 0px;
     padding: 15px;
@@ -469,17 +471,19 @@ input[type=password]:focus, textarea:focus {
 
 .signin{
     width: 350px;
-    height: 350px;
+    height: 450px;
     background-color:  #e1e4e4;
     border: 3px solid   #d0d0d0;
     border-radius: 8px;
     float: right;
     margin: 40px;
     margin-top: 130px;
+    float: left;
+    margin-left: 530px;
 }
 .signin h3{
     text-align: center;
-    color: #06a8b8;
+    color: #4A8BFD;
     background-color: #d0d2d2;
     margin: 0px;
     padding: 15px;
@@ -696,6 +700,14 @@ input[type=password]:focus, textarea:focus {
     .photos ul {
       display: none;
     }
+    .signin{
+      float: left;
+      margin-left: 5px;
+    }
+    .signup{
+      float: left;
+      margin-left: 5px;
+    }
 }
 
 
@@ -736,7 +748,7 @@ input[type=password]:focus, textarea:focus {
       top: -54px;
     }
     #blog2{
-      margin-left: 565px;
+      margin-left: 540px;
       top: 300px;
     }
     #blog3{
@@ -748,6 +760,14 @@ input[type=password]:focus, textarea:focus {
     }
     .photos ul{
       display: block;
+    }
+    .signin{
+      float: left;
+      margin-left: 530px;
+    }
+    .signup{
+      float: left;
+      margin-left: 530px;
     }
     
     
@@ -869,3 +889,4 @@ input[type=password]:focus, textarea:focus {
 .carousel-indicators .active{
   background-color: #4A8BFD;
 }    
+
